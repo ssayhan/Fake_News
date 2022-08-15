@@ -18,3 +18,5 @@ SQL is the database we intend to use, and we will integrate Flask to display the
 ## Machine Learning
 SciKitLearn is the ML library we'll be using to create a classifier. Our training and testing setup is Natural Language processing and Bianary Classification Evaluators.  
 
+=======
+# Group Project Fake News
