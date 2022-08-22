@@ -28,6 +28,10 @@ SciKitLearn is the ML library we'll be using to create a classifier. Our trainin
  * train the data and fit it 
  * and test it to see our accuracy
 * So far we have a 94% accuracy
+#  What i've done to make it better, and future goals
  * befor i orginaly i had 93 befor i had the mashine learning also look at thet text as well
+ * 94 % is good but not perfect. Word Bias would be important to look at fallowing through. with out research ive created my own code that would make a confusion matrix given a word. doing so showws if the word were wrong guessing it was fake news when it reality it should have been real and vise versa. seeing this can give us a better understanding of each value
+# Conclussion
+
 =======
 # Group Project Fake News
