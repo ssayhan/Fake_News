@@ -18,20 +18,4 @@ SQL is the database we intend to use, and we will integrate Flask to display the
 ## Machine Learning
 SciKitLearn is the ML library we'll be using to create a classifier. Our training and testing setup is Natural Language processing and Bianary Classification Evaluators. 
 
-* Data went through many transformations when trying to make it work with pyspark nlp pipeline. One being having it actually reading it correctly because the many tabs, enters and commas in it that are miss read as escape and delimiter value. After which we finally go into the pipeline which includes: 
-   * tokenizing the data : which splits the strings into a list of words
-   * removing SW: Removing stop words that really dont have any meaning to the thext it self 
-   * Hashing : turns the code into a matrix that holds the occurrence counts
-   * IDF: idf is a vector that fix a huge underlying problem of non meaningfull words that appear many times within our text 
-   * vectorAssember
- * after which we split the data in training and testing data
- * train the data and fit it 
- * and test it to see our accuracy
-* So far we have a 94% accuracy
-#  What i've done to make it better, and future goals
- * befor i orginaly i had 93 befor i had the mashine learning also look at thet text as well
- * 94 % is good but not perfect. Word Bias would be important to look at fallowing through. with out research ive created my own code that would make a confusion matrix given a word. doing so showws if the word were wrong guessing it was fake news when it reality it should have been real and vise versa. seeing this can give us a better understanding of each value
-# Conclussion
 
-=======
-# Group Project Fake News
