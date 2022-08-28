@@ -26,10 +26,6 @@ Pandas will be used to clean the data and perform an exploratory analysis. Furth
 •	pyspark
 
 
-
-## Database Storage
-SQL is the database we intend to use, and we will integrate Flask to display the data.
-
 ### Dataset
 
 The dataset usedi in this project is the Kaggle Dataset. It is including two types or article fake(0) and real(1) news. Dataset including only one file and more tha 70.000 artciles. Dataset contains the following information.
@@ -80,6 +76,17 @@ Wordcloud is the most frequent occurring words in the corpus to be shown.in word
 <img width="957" alt="text" src="https://user-images.githubusercontent.com/77603561/187055987-60065027-69af-4f37-b958-4f5607ae6607.png">
 
 <img width="969" alt="title" src="https://user-images.githubusercontent.com/77603561/187055988-359ac36e-3615-4753-8700-b4f624362b93.png">
+
+## Database Storage
+SQL is the database we intend to use, we used ORM and  SQLAlchemy library  on python to use some filters on our cleaned data set. We  used DB browser to stored our data.
+
+<img width="1008" alt="Screen Shot 2022-08-27 at 10 13 14 PM" src="https://user-images.githubusercontent.com/77603561/187057181-b7e9a91a-2aea-456e-a926-a339f78afb6b.png">
+
+<img width="1005" alt="Screen Shot 2022-08-27 at 10 13 27 PM" src="https://user-images.githubusercontent.com/77603561/187057185-a125f7d6-8e8f-4e18-9d15-8236ad5fbc1e.png">
+
+<img width="1009" alt="Screen Shot 2022-08-27 at 10 14 49 PM" src="https://user-images.githubusercontent.com/77603561/187057188-69490864-02ff-4e15-a4ef-d5c6208e42bf.png">
+
+
 
 
 ## Machine Learning
