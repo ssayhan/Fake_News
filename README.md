@@ -8,7 +8,7 @@
 
 ## Project Overview
 
-With the advent of the internet, and more importantly social media, fake news and missinformation has been on the rise and has been plaguing our society.  Some is so well hidden and advertised, it may be dfficult to spot if a source is fake news or not.  The purpose of this project is to create a Machine Learning model to detect fake news and missinformation.  We will be using Natural Language processing and Bianary Classification Evaluators on our dataset to help with training and testing of the Model.
+With the advent of the internet, and more importantly social media, fake news and misinformation has been on the rise and has been plaguing our society.  Some misinformation is so well hidden and advertised, it may be difficult to identify whether or not that source is reliable.  The purpose of this project is to create a Machine Learning model to detect fake news and misinformation. We will be using Natural Language processing and Bianary Classification Evaluators on our dataset to help with training and testing of the Model.
 
 # Technologies Used
 ## Data Cleaning and Analysis
@@ -28,7 +28,7 @@ Pandas will be used to clean the data and perform an exploratory analysis. Furth
 
 ### Dataset
 
-The dataset usedi in this project is the Kaggle Dataset. It is including two types or article fake(0) and real(1) news. Dataset including only one file and more tha 70.000 artciles. Dataset contains the following information.
+The dataset used in this project is the Kaggle Dataset. The data contains two types or articles, fake(0) and real(1) news. The data we used includes only one dataset with more tha 70,000 artciles. The dataset contains the following information/columns:
 
 -	Title
 -	Text
@@ -38,9 +38,9 @@ The dataset usedi in this project is the Kaggle Dataset. It is including two typ
 
 ### Data preprocessing:
 
-+ We started our journey with cleaning dataset. We replaced all “null’ values with ‘None’. 
++ We started our journey with cleaning the dataset. We replaced all “null’ values with ‘None’. 
 
-+Then we moved stop words form our dataset with using ‘ stopwords’. After stopwords we recognize there are still words need to remove like ‘us’, ‘would’ etc. so we created custom stop words to remove them. To get better accuracy in ML.
++ Then, we moved stopwords form our dataset with using ‘ stopwords’. After removing the stopwords, we recognized that there were still words we needed to remove like ‘us’, ‘would’, etc., so we created custom stop words to remove them in order to get a higher accuracy in our Machine Learning Model.
 
 **Stopwords**
 <img width="1006" alt="stopwords" src="https://user-images.githubusercontent.com/77603561/187055919-159e7a47-1f9c-45b2-93d3-7b857f1c75ae.png">
@@ -56,21 +56,21 @@ The dataset usedi in this project is the Kaggle Dataset. It is including two typ
 
 <img width="649" alt="top10 text" src="https://user-images.githubusercontent.com/77603561/187055952-faa3123c-7830-4c3f-93cb-d9311b645135.png">
 
-+ We created data frame which including 10 most common words in text columns with fake(0) and true(1) counting.
++ We created dataframe which includes the 10 most common words in the 'text' columns while tracking the fake(0) and true(1) labels.
 
 <img width="278" alt="fake true count" src="https://user-images.githubusercontent.com/77603561/187056363-330c445b-9c85-4c1d-abdb-a4f49160b9a7.png">
 
 
-**BarH chart for most common words in text**
+**Bar chart for most common words in the 'text' column**
 <img width="943" alt="Screen Shot 2022-08-27 at 1 54 08 AM" src="https://user-images.githubusercontent.com/77603561/187055993-9dbedb79-624c-4c50-9fda-671527b18e4f.png">
 
-**Stacked chart for most common workds in text with 0(fake) and 1(true) count**
+**Stacked chart for most common words in the 'text' with labels: 0(fake) and 1(true) count**
 <img width="870" alt="Screen Shot 2022-08-27 at 1 54 15 AM" src="https://user-images.githubusercontent.com/77603561/187055996-40027a5e-983d-48bc-886d-d4f825f53f8b.png">
 
 
 ### Wordcloud Dataset
 
-Wordcloud is the most frequent occurring words in the corpus to be shown.in wordcloud most common words appears larger font. As we see most frequent words in title and text.
+Wordcloud is the most frequent occurring words in the corpus to be shown. In wordcloud, the most common words appear in a larger font. The images below display the most common words found in both the 'title' and 'text' columns.
 
 
 <img width="957" alt="text" src="https://user-images.githubusercontent.com/77603561/187055987-60065027-69af-4f37-b958-4f5607ae6607.png">
@@ -78,7 +78,7 @@ Wordcloud is the most frequent occurring words in the corpus to be shown.in word
 <img width="969" alt="title" src="https://user-images.githubusercontent.com/77603561/187055988-359ac36e-3615-4753-8700-b4f624362b93.png">
 
 ## Database Storage
-SQL is the database we intend to use, we used ORM and  SQLAlchemy library  on python to use some filters on our cleaned data set. We  used DB browser to stored our data.
+SQL is the database we used for storage. We also used ORM and SQLAlchemy library in python to apply filters on our cleaned dataset. We used DB browser to store our data.
 
 <img width="1008" alt="Screen Shot 2022-08-27 at 10 13 14 PM" src="https://user-images.githubusercontent.com/77603561/187057181-b7e9a91a-2aea-456e-a926-a339f78afb6b.png">
 
@@ -91,23 +91,25 @@ SQL is the database we intend to use, we used ORM and  SQLAlchemy library  on py
 
 ## Machine Learning
 
-In the end we swtiched from SciKitLearn to Spark-NLP which is a library created by John Snow Labs for preforming efficient natural language processing tasking using Spark. We decided to use this because it it was something we learned brefly in a preveous moduel and learning it can improve our skills. but also it is made for decifering words and so far it does it well with a 94 %. It also has a whole pipe line which include removing stop words which helps alot. It also is used for huge data which means this data set could be scaled and still produce results. Its not by all means perfect. Transformation code is a little clunky and manipulation is not as easy as pandas(could be a personal oppinon). You need to use it on google colab (good and bad thing). 
+In the end we swtiched from SciKitLearn to Spark-NLP, which is a library created by John Snow Labs for preforming efficient natural language processing tasks using Spark. We decided to use this because it was something we learned briefly in a preveous module and we figured that if we dived deeper into the topic, we could improve our analytic skills. It is also made for decifering words and for our analysis, it did a good job, giving us an accuracy score of about 94 %. It also has a whole pipeline which includes removing stopwords which made our analysis easier. It is used for huge data, which means this dataset could be scaled and still produce results. Although Spark-NLP was very useful in most way, it is by no means without flaws. The transformation code is a little clunky and we personally found that manipulation was not as easy as pandas. Another potential limitation is that is must be used on google colab, which can be either a good or bad thing depending on the user. 
 
 ### Description of preliminary data preprocessing
-* Data went through many transformations when trying to make it work with pyspark nlp pipeline. One being having it actually reading it correctly because the many tabs, enters and commas in it that are miss read as escape and delimiter value. After which we finally go into the pipeline which includes: 
+* Our dataset went through many transformations when trying to make it work with pyspark nlp pipeline. One of the issues we fixed was having it read the content of the data correctly because the many tabs, enters and commas in it were misread as an escape and delimiter value. After we solved that issue, we finally went into the pipeline which includes: 
    * tokenizing the data : which splits the strings into a list of words
-   * removing SW: Removing stop words that really dont have any meaning to the thext it self 
+   * removing SW: Removing stop words that really dont have any meaning to the text itself 
    * Hashing : turns the code into a matrix that holds the occurrence counts
-   * IDF: idf is a vector that fix a huge underlying problem of non meaningfull words that appear many times within our text 
+   * IDF: idf is a vector that fixes a huge underlying problem of nonmeaningful words that appear many times within our text 
    * vectorAssember
- * after which we split the data in training and testing data using pysparks code : randomSplit([0.7, 0.3], 21)
- * train the data and fit it 
- * and test it to see our accuracy
-* So far we have a 94% accuracy
+ * After which we split the data into training and testing data using pysparks code : randomSplit([0.7, 0.3], 21)
+ * We trained the data and fit it 
+ * We tested it to see our accuracy
+* The highest accuracy we have achieved is a 94% 
+
 ### Description of preliminary feature
- * befor i orginaly i had 93 befor i had the mashine learning also look at thet text as well
+ * before I orginaly i had 93 befor i had the mashine learning also look at thet text as well
  * 94 % is good but not perfect. Word Bias would be important to look at fallowing through. with out research ive created my own code that would make a confusion matrix given a word. doing so showws if the word were wrong guessing it was fake news when it reality it should have been real and vise versa. seeing this can give us a better understanding of each value
-### Conclussion
+ 
+### Conclusion
  * there is still much to do. starting this week i wanto try removing data with words that may confuse the matrix. I also want to try replacing None( our word we used to replace N/A) with another word that might not pop up as much cause this could create bias as well. 
  
  #### Problems with code
