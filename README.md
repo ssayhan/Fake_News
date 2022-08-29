@@ -6,7 +6,7 @@
  - Anthony Marquez
  - Kevin Whitiak
 
-## Project OVerview
+## Project Overview
 
 With the advent of the internet, and more importantly social media, fake news and missinformation has been on the rise and has been plaguing our society.  Some is so well hidden and advertised, it may be dfficult to spot if a source is fake news or not.  The purpose of this project is to create a Machine Learning model to detect fake news and missinformation.  We will be using Natural Language processing and Bianary Classification Evaluators on our dataset to help with training and testing of the Model.
 
