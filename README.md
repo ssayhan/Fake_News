@@ -118,7 +118,8 @@ In the end we swtiched from SciKitLearn to Spark-NLP, which is a library created
   * Tabs and enters have to be removed in pandas. 
   * Nan and empy cells need to be replaced. 
   * Trying my own way of checking bias it was found that removing the word complelty only made the percentage lower. 
-=======
+
+===================================================================================
 #### Group Project Fake News
 
 
