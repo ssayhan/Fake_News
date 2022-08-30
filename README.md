@@ -1,4 +1,4 @@
-# Group_Project_Fake_News
+# Group Project Fake News
 
 ### Group
  - Amanda Goguen
@@ -96,28 +96,28 @@ In the end we swtiched from SciKitLearn to Spark-NLP, which is a library created
 
 ### Description of preliminary data preprocessing
 * Our dataset went through many transformations when trying to make it work with pyspark nlp pipeline. One of the issues we fixed was having it read the content of the data correctly because the many tabs, enters and commas in it were misread as an escape and delimiter value. After we solved that issue, we finally went into the pipeline which includes: 
-   * tokenizing the data : which splits the strings into a list of words
-   * removing SW: Removing stop words that really dont have any meaning to the text itself 
-   * Hashing : turns the code into a matrix that holds the occurrence counts
-   * IDF: idf is a vector that fixes a huge underlying problem of nonmeaningful words that appear many times within our text 
-   * vectorAssember
+ * tokenizing the data : which splits the strings into a list of words
+ * removing SW: Removing stop words that really dont have any meaning to the text itself 
+ * Hashing : turns the code into a matrix that holds the occurrence counts
+ * IDF: idf is a vector that fixes a huge underlying problem of nonmeaningful words that appear many times within our text 
+ * vectorAssember
  * After which we split the data into training and testing data using pysparks code : randomSplit([0.7, 0.3], 21)
  * We trained the data and fit it 
  * We tested it to see our accuracy
-* The highest accuracy we have achieved is a 94% 
+ * The highest accuracy we have achieved is a 94% 
 
 ### Description of preliminary feature
- * before I orginaly i had 93 befor i had the mashine learning also look at thet text as well
- * 94 % is good but not perfect. Word Bias would be important to look at fallowing through. with out research ive created my own code that would make a confusion matrix given a word. doing so showws if the word were wrong guessing it was fake news when it reality it should have been real and vise versa. seeing this can give us a better understanding of each value
+ * Originally, our accuracy was a 93% before we changed our Model.
+ * 94 % is good, but not perfect. Word Bias would be an important factor to look at. Without research, I've created my own code that would make a confusion matrix given an input word. It is able to show if the matrix is incorrect and guessing it was fake news when it reality it should have been real and visa versa. Seeing this can give us a better understanding of individual values in our dataset.
  
 ### Conclusion
- * there is still much to do. starting this week i wanto try removing data with words that may confuse the matrix. I also want to try replacing None( our word we used to replace N/A) with another word that might not pop up as much cause this could create bias as well. 
+ * There is still more we would like to do to improve our analysis. Starting this week I will try removing data with words that may confuse the matrix. I also want to try replacing 'None' (the word we chose to replace NaN) with another word that might not pop up as frequently since this could create a bias in our dataset. 
  
  #### Problems with code
- * The only bugs that can really effect the code is the data it self. It needs to be cleaned. 
+  * The only bugs that can really effect the code is the data itself. It needs to be cleaned. 
   * Tabs and enters have to be removed in pandas. 
   * Nan and empy cells need to be replaced. 
- * Well trying my own way of checking bias it was found that removing the word complelty only made the percentage lower. 
+  * Trying my own way of checking bias it was found that removing the word complelty only made the percentage lower. 
 =======
 #### Group Project Fake News
 
