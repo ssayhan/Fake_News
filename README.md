@@ -16,7 +16,6 @@ Pandas will be used to clean the data and perform an exploratory analysis. Furth
 
 ### Dependencies
 •	python 3.x
-•	nltk
 •	numpy
 •	sklearn
 •	matplotlib
@@ -24,7 +23,8 @@ Pandas will be used to clean the data and perform an exploratory analysis. Furth
 •	scipy
 •	pandas
 •	pyspark
-
+•	NLP
+* 
 
 ### Dataset
 
