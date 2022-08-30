@@ -25,6 +25,7 @@ Pandas will be used to clean the data and perform an exploratory analysis. Furth
 •	pyspark
 •	NLP
 • BinaryClassification
+• SQLAlchemy
 
 ### Dataset
 
